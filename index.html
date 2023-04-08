@@ -8,8 +8,8 @@
     <title>Momentum</title>
 </head>
 <body>
-    <h2 id = "clock" class="center"></h2>
-    <form id = "login-form" class = "hidden center">
+    <h2 id = "clock" class="center"></h2> // 시계 출력
+    <form id = "login-form" class = "hidden center"> // 로그인 이름 입력 칸, 버튼
         <input 
             required maxlength="15"
             type = "text" 
@@ -17,19 +17,19 @@
         />
         <input id="btn" type="submit" value="Log In"/>
     </form>
-    <div id="user-info" class="center">
+    <div id="user-info" class="center"> // 로그인 버튼 클릭 후 이름 출력
         <h1 class="hidden" id="user-name"></h1>
         <button class="hidden" id="change-user" type= "button">x</button>
     </div>
-    <form id = "todo-form">
+    <form id = "todo-form"> // 할 일 입력 칸
         <input type = "text" placeholder="Write a To Do and Press" required>
     </form>
-    <ul id = "todo-list"></ul>
-    <div id = "quote" class = "center">
+    <ul id = "todo-list"></ul> // 할 일들 출력
+    <div id = "quote" class = "center"> // 명언 랜덤으로 출력
         <span></span>
         <span></span>
     </div>
-    <div id="weather">
+    <div id="weather"> // 날씨와 지역 출력
         <span></span>
         <span></span>
     </div>
