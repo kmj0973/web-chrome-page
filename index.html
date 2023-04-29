@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,28 +10,28 @@
     <title>Momentum</title>
 </head>
 <body>
-    <h2 id = "clock" class="center"></h2> // 시계 출력
-    <form id = "login-form" class = "hidden center"> // 로그인 이름 입력 칸, 버튼
-        <input 
-            required maxlength="15"
-            type = "text" 
-            placeholder="what is your name?"
-        />
-        <input id="btn" type="submit" value="Log In"/>
-    </form>
-    <div id="user-info" class="center"> // 로그인 버튼 클릭 후 이름 출력
+    <div id="user-info" class="center log-in">
+        <h2 id = "clock" class="center clock-size"></h2> 
+        <form id = "login-form" class = "hidden center"> 
+            <input 
+                id ="name-input"
+                required maxlength="15"
+                type = "text"
+            />
+            <input id="btn" type="submit" value="Log In"/>
+        </form>
         <h1 class="hidden" id="user-name"></h1>
         <button class="hidden" id="change-user" type= "button">x</button>
     </div>
-    <form id = "todo-form"> // 할 일 입력 칸
+    <form id = "todo-form" class="hidden"> 
         <input type = "text" placeholder="Write a To Do and Press" required>
     </form>
-    <ul id = "todo-list"></ul> // 할 일들 출력
-    <div id = "quote" class = "center"> // 명언 랜덤으로 출력
+    <ul id = "todo-list" class="hidden"></ul>
+    <div id = "quote" class = "hidden">
         <span></span>
         <span></span>
     </div>
-    <div id="weather"> // 날씨와 지역 출력
+    <div id="weather" class="hidden"> 
         <span></span>
         <span></span>
     </div>

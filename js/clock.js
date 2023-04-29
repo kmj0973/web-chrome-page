@@ -9,8 +9,8 @@ function countClock(){
     let minutes = count.getMinutes().toString();
     let second = count.getSeconds().toString();
     
-    clock.innerHTML = hour.padStart(2,"0")+":"+ minutes.padStart(2,"0") + ":" + second.padStart(2,"0");
-    clock.style.color = `#${color_r+color_g+color_b}`;
+    clock.innerText= hour.padStart(2,"0")+":"+ minutes.padStart(2,"0") + ":" + second.padStart(2,"0");
+    // clock.style.color = `#${color_r+color_g+color_b}`;
 }
 // hour < 10일떄 second <10
 // hour < 10 second >10

@@ -15,7 +15,7 @@ function onLoginSubmit(e) {
 function paintGreeting(name){
     h1.classList.remove("hidden");
     changeBtn.classList.remove("hidden");
-    h1.innerText = `Hello ${name}`;
+    h1.innerText = `기둥 ${name} 님`;
 }
 function changeBtnClick(e){
     e.preventDefault();
@@ -36,3 +36,4 @@ else{
     loginForm.classList.remove("hidden");
     loginForm.addEventListener("submit",onLoginSubmit);
 }
+//염주, 암주, 음주, 하주, 수주, 풍주

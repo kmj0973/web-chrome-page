@@ -1,7 +1,42 @@
+@font-face {
+    font-family: 'MYArirang-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYArirang-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 .hidden { 
     display: none;
 }
 .center{
+    text-align: center;   
+}
+.log-in{
+    height:500px;
+    width: auto;
+    /* 상하좌우 정중앙 정렬하기 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.clock-size{
+    font-size:100px;
+    font-weight: bold;
+}
+#name-input{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom : 5px double black;
+    background-color:transparent;
+
+    
     text-align: center;
 }
 /* #clock{
@@ -16,6 +51,9 @@
 #login-form{
    
 } */
+body{
+    font-family:'ChosunCentennial';
+}
 img {
     position:absolute;
     width:100%;
