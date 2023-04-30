@@ -1,15 +1,11 @@
-@font-face {
-    font-family: 'MYArirang-Medium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYArirang-Medium.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300');
 @font-face {
     font-family: 'ChosunCentennial';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+
 .hidden { 
     display: none;
 }
@@ -26,6 +22,7 @@
     transform: translate(-50%, -50%);
 }
 .clock-size{
+    width:425px;
     font-size:100px;
     font-weight: bold;
 }
@@ -35,10 +32,59 @@
     border-right:none;
     border-bottom : 5px double black;
     background-color:transparent;
-
-    
+    height:50px;
+    width:300px;
+    font-size:50px;
     text-align: center;
 }
+.btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+    font-family:'ChosunCentennial';
+    font-size:20px;
+    color:white;
+    border-radius: 5px;
+    background: rgb(255,27,0);
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  }
+  .btn-5:hover {
+    color: black;
+    background: transparent;
+     box-shadow:none;
+  }
+  .btn-5:before,
+  .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: black;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+  }
+  .btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn-5:hover:before,
+  .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
 /* #clock{
     
 }
@@ -47,10 +93,7 @@
 }
 #user-info{
     
-}
-#login-form{
-   
-} */
+}*/
 body{
     font-family:'ChosunCentennial';
 }

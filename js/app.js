@@ -2,7 +2,7 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const loginButton = document.querySelector("#login-form #btn");
 const h1 = document.querySelector("h1");
-const changeBtn = document.querySelector("button");
+const changeBtn = document.querySelector("#change-user");
 //querySelector를 통해 html속성들을 가져올 수 있다.
 
 function onLoginSubmit(e) {
