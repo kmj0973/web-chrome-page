@@ -25,6 +25,12 @@ function paintToDo(newToDoObj){
     span.innerHTML = newToDoObj.text;
     const button = document.createElement("button");
     button.innerText = "X";
+    button.classList.add("delete");
+   // button.style.backgroundColor = "transparent";
+  //  button.style.position = "relative";
+   // button.style.bottom = "4px";
+    //button.style.left = "20px"; 
+    //button.style.width = "px";
     button.addEventListener("click",deleteToDo);
 
     list.appendChild(span);

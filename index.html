@@ -8,6 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Momentum</title>
+    <style>
+        .wrap {
+          border: 1px solid black;
+          padding: 10px;
+        }
+        .fade-in {
+          width: 100px;
+          height: 100px;
+          background-color: brown;
+          opacity: 0;
+          transition: 0.3s;
+        }
+        .tip1:hover + .fade-in {
+          opacity: 1;
+        }
+        .fade-out {
+          width: 100px;
+          height: 100px;
+          background-color: darkcyan;
+          opacity: 1;
+          transition: 0.3s;
+        }
+        .tip2:hover + .fade-out {
+          opacity: 0;
+        }
+      </style>
 </head>
 <body>
     <div id="user-info" class="center log-in">
@@ -17,6 +43,7 @@
                 id ="name-input"
                 required maxlength="15"
                 type = "text"
+                placeholder="Write your name"
             />
             <div>
             <button class ="btn-5" id="btn" type="submit"><span>입장</span></button>
@@ -24,19 +51,27 @@
         </form>
         <h3 class ="hidden" id="user-nick"></h3>
         <h1 class="hidden" id="user-name"></h1>
-        <button class="hidden" id="change-user" type= "button">x</button>
+        <button class="hidden btn-5" id="change-user" type= "button">×</button>
     </div>
-    <form id = "todo-form" class="hidden"> 
-        <input type = "text" placeholder="Write a To Do and Press" required>
-    </form>
-    <ul id = "todo-list" class="hidden"></ul>
-    <div id = "quote" class = "hidden">
+    <div>
+        <form id = "todo-form"> 
+           <div>임무 수행 일지</div>
+            <input id = "todo-input" type = "text" placeholder="Write a mission" required>
+        </form>
+        <ul id = "todo-list"></ul>
+    </div>
+    <div id = "quote">
         <span></span>
         <span></span>
     </div>
-    <div id="weather" class="hidden"> 
+    <div id="weather">
         <span></span>
         <span></span>
+    </div>
+    <div class="will">
+        To be continued..
+
+       <p>Thank you!!</p>
     </div>
     <script src = "js/app.js"></script>
     <script src = "js/clock.js"></script>

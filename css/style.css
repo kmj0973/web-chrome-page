@@ -22,7 +22,7 @@
     transform: translate(-50%, -50%);
 }
 .clock-size{
-    width:415px;
+    width:420px;
     font-size:100px;
     font-weight: bold;
 }
@@ -47,6 +47,13 @@
 }
 #user-name{
   font-size:50px;
+
+}
+#change-user{
+  width:20px;
+  height: 20px;
+  margin-top:0px;
+  line-height: 0px;
 }
 .btn-5 {
     width: 140px;
@@ -55,6 +62,7 @@
     margin-top:40px;
     padding: 0;
     border: none;
+    text-shadow: /* White glow */ 0 0 2px #fff, 0 0 5px #fff, 0 0 16px #fff, /* Green glow */ 0 0 42px black, 0 0 82px black, 0 0 92px black, 0 0 102px black, 0 0 151px black;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
@@ -111,4 +119,88 @@ img {
     bottom:0px;
     z-index: -1;
     opacity:83%;
+    pointer-events : none;
+}
+
+#quote{
+  position: absolute;
+  left:1%;
+  bottom:2%;
+  font-size:20px;
+  
+}
+#weather{
+  position:absolute;
+  bottom:2%;
+  font-size:20px;
+  font-weight: bold;
+  right:1%;
+}
+
+#todo-form{
+  position: absolute;
+  left:5%;
+  top:120px;
+  width:440px;
+  height: 550px;
+  font-size:40px;
+  background-color: black;
+  color:rgba(255,255,255,.5);
+  border-radius: 10px;;
+  text-align: center;
+  opacity: 0.8;
+}
+#todo-input{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom : 5px double rgba(255,255,255,.5);
+    background-color:transparent;
+    height:30px;
+    width:300px;
+    font-family:'ChosunCentennial';
+    font-weight: bold;
+    font-size:20px;
+    color:white;
+    text-align: center;
+}
+#todo-list{
+  position:absolute;
+  width:350px;
+  top: 210px;
+  left:7%;
+  font-size: 30px;
+  color:white;
+  list-style: decimal;
+}
+input::placeholder{
+  color:rgba(255,255,255,.5)
+}
+#name-input::placeholder{
+  font-size:30px;
+}
+.delete{
+  position: relative;
+  background-color: transparent;
+  bottom:3px;
+  left:10px;
+  color:white;
+  font-family: 'ChosunCentennial';
+  font-weight: bold;
+  font-size:20px;
+}
+
+.will{
+  position: absolute;
+  right:5%;
+  top:120px;
+  width:440px;
+  height: 550px;
+  font-size:40px;
+  background-color: black;
+  color:rgba(255,255,255,.5);
+  border-radius: 10px;;
+  text-align: center;
+  line-height: 200px;
+  opacity: 0.8;
 }

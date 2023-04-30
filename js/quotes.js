@@ -48,4 +48,4 @@ function quotePrint(){
     author.innerHTML = `-${todayQuote.author}-`;
 }
 quotePrint();
-setInterval(quotePrint, 10000);
+setInterval(quotePrint, 5000);
