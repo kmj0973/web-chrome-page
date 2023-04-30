@@ -13,7 +13,7 @@
     text-align: center;   
 }
 .log-in{
-    height:500px;
+    height:550px;
     width: auto;
     /* 상하좌우 정중앙 정렬하기 */
     position: absolute;
@@ -22,7 +22,7 @@
     transform: translate(-50%, -50%);
 }
 .clock-size{
-    width:425px;
+    width:415px;
     font-size:100px;
     font-weight: bold;
 }
@@ -34,13 +34,25 @@
     background-color:transparent;
     height:50px;
     width:300px;
+    font-family:'ChosunCentennial';
+    font-weight: bold;
     font-size:50px;
     text-align: center;
 }
+#user-nick{
+  position:absolute;
+  left: 35%;
+  top:35%;
+  font-size:40px;
+}
+#user-name{
+  font-size:50px;
+}
 .btn-5 {
-    width: 130px;
-    height: 40px;
+    width: 140px;
+    height: 50px;
     line-height: 42px;
+    margin-top:40px;
     padding: 0;
     border: none;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
@@ -48,10 +60,10 @@
    4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
     font-family:'ChosunCentennial';
-    font-size:20px;
+    font-weight: bold;
+    font-size:25px;
     color:white;
     border-radius: 5px;
-    background: rgb(255,27,0);
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
   }
   .btn-5:hover {
@@ -85,15 +97,7 @@
     width:100%;
     transition:800ms ease all;
   }
-/* #clock{
-    
-}
-#user-name{
-    
-}
-#user-info{
-    
-}*/
+
 body{
     font-family:'ChosunCentennial';
 }
